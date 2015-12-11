@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="small-12 large-4 columns">
+    <div class="row"><%= @product.name %> </div>
+    <div class="row">  <%= @product.price %></div>
+    <div class="row"><%= @product.category_id %> </div>
+    <div class="row"> <%= image_tag @product.pdimg.url if @product.pdimg? %></div>
+    <div class="row"><%= @product.description %> </div>
+  </div>
+  
+</div>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
