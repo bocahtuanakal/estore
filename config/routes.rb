@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'static_pages/signup'
 
   resources :products
-  root      'products#index'
+  root      'static_pages#home'
 
 
 
